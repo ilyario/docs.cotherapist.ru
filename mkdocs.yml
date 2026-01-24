@@ -15,7 +15,9 @@ nav:
     - Акцент 2 90:
       - Обзор: diagnostics/accent-2-90/index.md
       - Анализ совместимости пары: diagnostics/accent-2-90/pair-compatibility-analysis.md
-      - Комбинаторная интерпретация: diagnostics/accent-2-90/сombinatorial-interpretation.md
+      - Сочетаний шкал: diagnostics/accent-2-90/сombinatorial-interpretation.md
+      - Алгоритм: diagnostics/accent-2-90/algorithm.md
+      - Вопросы: diagnostics/accent-2-90/questions.md
 
 # Тема
 theme:
