@@ -1,0 +1,77 @@
+site_name: Документация CoTherapist
+site_description: Документация проекта CoTherapist
+site_author: CoTherapist Team
+site_url: https://docs.cotherapist.ru
+
+# Репозиторий
+repo_name: docs.cotherapist.ru
+repo_url: https://github.com/cotherapist/docs.cotherapist.ru
+edit_uri: edit/main/docs/
+
+# Настройки навигации
+nav:
+  - Главная: index.md
+  - Диагностика:
+    - Акцент 2 90:
+      - Обзор: diagnostics/accent-2-90/index.md
+      - Анализ совместимости пары: diagnostics/accent-2-90/pair-compatibility-analysis.md
+      - Комбинаторная интерпретация: diagnostics/accent-2-90/сombinatorial-interpretation.md
+
+# Тема
+theme:
+  name: material
+  # palette:
+  #   # Светлая тема
+  #   - scheme: default
+  #     primary: indigo
+  #     accent: indigo
+  #     toggle:
+  #       icon: material/brightness-7
+  #       name: Переключить на тёмную тему
+  #   # Тёмная тема
+  #   - scheme: slate
+  #     primary: indigo
+  #     accent: indigo
+  #     toggle:
+  #       icon: material/brightness-4
+  #       name: Переключить на светлую тему
+  features:
+    # - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    # - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+
+# Плагины
+plugins:
+  - search
+
+# Расширения Markdown
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - attr_list
+  - md_in_html
+
+# Дополнительные настройки
+# extra:
+#   social:
+#     - icon: fontawesome/brands/github
+#       link: https://github.com/cotherapist
+#     - icon: fontawesome/brands/telegram
+#       link: https://t.me/cotherapist
